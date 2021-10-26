@@ -71,7 +71,8 @@ Shader "Explorer/Mandelbrot"
                     if (length(z) > 2) break;
                 }
 
-                return iter / 255;
+                float m = sqrt(iter / 255);
+                return m;
             }
             ENDCG
         }
